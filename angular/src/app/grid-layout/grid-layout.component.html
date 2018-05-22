@@ -1,0 +1,22 @@
+<h2>Grid Layout</h2>
+
+
+<select (change)="loadComponent($event.target.value)">
+  <option value='grid'>Grid</option>
+  <option value='chart'>Chart</option>
+  <option value='progress'>Progress</option>
+  <option value='report'>Report</option>
+</select>
+
+<button (click)="clear()">Clear</button>
+
+<button (click)="swap()">Swap</button>
+
+
+<button (click)="removeRandom()">Remove Random</button>
+
+<div class="flex two">
+  <ng-template host-template>
+
+  </ng-template>
+</div>

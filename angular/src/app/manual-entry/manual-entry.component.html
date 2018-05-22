@@ -1,0 +1,35 @@
+<h2>Form</h2>
+
+<form (ngSubmit)="save()" #entryForm="ngForm" >
+
+  <p *ngIf="entryForm.dirty">
+    Form is changed
+  </p>
+
+
+  <p *ngIf="entryForm.invalid">
+      Form is invalid
+    </p>
+
+<input name="street" required 
+                      minlength="3"
+                       [(ngModel)]="address.street" />
+
+<select name="state"  [(ngModel)]="address.state" >
+    <option value="KA">Karnataka</option>
+    <option value="TN">Tamilnadu</option>
+</select>
+
+<select name="city" [(ngModel)]="address.city" >
+
+</select>
+
+<!--  [disabled]="entryForm.invalid" -->
+
+<button type="submit" 
+        mat-raised-button 
+        color="primary"
+       
+        >Save</button>
+
+</form> 

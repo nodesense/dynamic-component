@@ -1,0 +1,23 @@
+<button (click)="loadLayout('tab')" mat-button color="primary">
+  Tab
+</button>
+
+<button (click)="loadLayout('stack')" mat-raised-button color="primary" >
+  Stack
+</button>
+
+
+<button (click)="loadLayout('grid')" mat-icon-button>
+  Grid
+   
+</button>
+
+<div>
+
+  <!-- place holder dynamically load either tab, grid, stack component-->
+  <!-- to get instance of ng-template and viewRef, we need directive -->
+  <ng-template host-template>
+
+  </ng-template>
+
+</div>
